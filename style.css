@@ -3,12 +3,33 @@
 body {
     background-color: #00afb9; /* Sets a vibrant turquoise background */
     background-image: linear-gradient(135deg, #00afb9, #f07167); /* Creates a festive gradient */
+    background-size: cover; /* Covers the page background */
+    background-position: center; /* Centers the background */
+    background-repeat: no-repeat; /* Prevents the background from repeating */
     font-family: Arial, sans-serif; /* Sets a simple, readable font */
     margin: 0; /* Removes default page margins */
     padding: 40px 20px; /* Adds space around the invitation */
     color: #ffffff; /* Makes the default text white */
     box-sizing: border-box; /* Includes padding in element dimensions */
     min-height: 100vh; /* Makes the background cover the full screen */
+}
+
+/* GIF background displayed when the user is attending */
+body.attending {
+    background-image: url("https://media.giphy.com/media/l2JHPB58MjfV8W3K0/giphy.gif"); /* Adds the party GIF */
+    background-size: cover; /* Makes the GIF cover the entire background */
+    background-position: center; /* Centers the GIF */
+    background-repeat: no-repeat; /* Prevents the GIF from repeating */
+    background-attachment: fixed; /* Keeps the background in place while scrolling */
+}
+
+/* GIF background displayed when the user is not attending */
+body.not-attending {
+    background-image: url("https://media.giphy.com/media/JER2en0ZRiGUE/giphy.gif"); /* Adds the new GIF */
+    background-size: cover; /* Makes the GIF cover the entire background */
+    background-position: center; /* Centers the GIF */
+    background-repeat: no-repeat; /* Prevents the GIF from repeating */
+    background-attachment: fixed; /* Keeps the background in place while scrolling */
 }
 
 /* Main invitation container */
@@ -93,7 +114,7 @@ header h2 {
 .rsvp-section select {
     width: 100%; /* Makes fields fill the available width */
     padding: 14px; /* Adds space inside the fields */
-    margin-bottom: 25px; /* Increases space below each field */
+    margin-bottom: 25px; /* Adds space below each field */
     border: 2px solid #00afb9; /* Adds a turquoise border */
     border-radius: 8px; /* Rounds the field corners */
     font-size: 16px; /* Makes the text easy to read */
