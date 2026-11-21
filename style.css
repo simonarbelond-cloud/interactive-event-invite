@@ -1,8 +1,8 @@
 
 /* General page styling */
 body {
-    background-color: #170b35; /* Sets a dark purple background */
-    background-image: linear-gradient(135deg, #170b35, #432078, #171044); /* Creates a colorful gradient */
+    background-color: #00afb9; /* Sets a vibrant turquoise background */
+    background-image: linear-gradient(135deg, #00afb9, #f07167); /* Creates a festive gradient */
     font-family: Arial, sans-serif; /* Sets a simple, readable font */
     margin: 0; /* Removes default page margins */
     padding: 40px 20px; /* Adds space around the invitation */
@@ -20,14 +20,14 @@ body {
     margin: 30px auto; /* Centers the invitation horizontally */
     padding: 45px; /* Adds space inside the container */
     border-radius: 20px; /* Rounds the container corners */
-    box-shadow: 0 10px 35px rgba(0, 0, 0, 0.35); /* Adds depth with a shadow */
+    box-shadow: 0 10px 35px rgba(0, 0, 0, 0.25); /* Adds depth with a shadow */
     box-sizing: border-box; /* Includes padding in the total width */
     text-align: center; /* Centers the invitation content */
 }
 
 /* Invitation header */
 header {
-    background-color: #ff4fa3; /* Adds a bright pink header */
+    background-color: #f07167; /* Adds a vibrant coral header */
     color: #ffffff; /* Makes header text white */
     padding: 30px 20px; /* Adds space around the header text */
     border-radius: 15px; /* Rounds the header corners */
@@ -43,14 +43,14 @@ header h1 {
 
 /* Event date */
 header h2 {
-    color: #fff2a8; /* Gives the date a bright yellow color */
+    color: #ffffff; /* Makes the date white */
     font-size: 24px; /* Sets the date size */
     margin: 0; /* Removes default heading margins */
 }
 
 /* Event description section */
 .event-description {
-    background-color: #f3edff; /* Adds a light purple background */
+    background-color: #e0f7f7; /* Adds a light turquoise background */
     padding: 25px; /* Adds space inside the section */
     border-radius: 12px; /* Rounds the section corners */
     margin-bottom: 30px; /* Adds space below the description */
@@ -65,14 +65,14 @@ header h2 {
 
 /* RSVP section */
 .rsvp-section {
-    background-color: #fff5e8; /* Adds a warm light background */
+    background-color: #fff0ed; /* Adds a light coral background */
     padding: 30px; /* Adds space inside the RSVP section */
-    border-radius: 12px; /* Rounds the section corners */
+    border-radius: 12px; /* Rounds the RSVP section corners */
 }
 
 /* RSVP heading */
 .rsvp-section h2 {
-    color: #7b2cbf; /* Makes the heading purple */
+    color: #00afb9; /* Makes the heading turquoise */
     font-size: 28px; /* Sets the heading size */
     margin-top: 0; /* Removes extra space above the heading */
     margin-bottom: 25px; /* Adds space below the heading */
@@ -93,8 +93,8 @@ header h2 {
 .rsvp-section select {
     width: 100%; /* Makes fields fill the available width */
     padding: 14px; /* Adds space inside the fields */
-    margin-bottom: 20px; /* Adds space below each field */
-    border: 2px solid #d8c7ed; /* Adds a light purple border */
+    margin-bottom: 25px; /* Increases space below each field */
+    border: 2px solid #00afb9; /* Adds a turquoise border */
     border-radius: 8px; /* Rounds the field corners */
     font-size: 16px; /* Makes the text easy to read */
     background-color: #ffffff; /* Gives fields a white background */
@@ -105,16 +105,17 @@ header h2 {
 .rsvp-section input:focus,
 .rsvp-section select:focus {
     outline: none; /* Removes the default browser outline */
-    border-color: #ff4fa3; /* Highlights the selected field in pink */
+    border-color: #f07167; /* Highlights the selected field in coral */
 }
 
 /* Submit button */
 .rsvp-section button {
-    background-color: #7b2cbf; /* Sets a vibrant purple button */
+    background-color: #00afb9; /* Sets a vibrant turquoise button */
     color: #ffffff; /* Makes the button text white */
     border: none; /* Removes the default border */
     border-radius: 30px; /* Makes the button rounded */
     padding: 15px 30px; /* Adds space inside the button */
+    margin-top: 5px; /* Adds space above the submit button */
     font-size: 17px; /* Sets the button text size */
     font-weight: bold; /* Makes the button text bold */
     cursor: pointer; /* Changes the cursor to a pointer */
@@ -124,14 +125,14 @@ header h2 {
 
 /* Button hover effect */
 .rsvp-section button:hover {
-    background-color: #ff4fa3; /* Changes the button to pink when hovered */
+    background-color: #f07167; /* Changes the button to coral when hovered */
 }
 
 /* Confirmation message - hidden initially */
 #confirmation-message {
     display: none; /* Hides the confirmation message at first */
-    background-color: #e4ffe9; /* Gives the message a light green background */
-    color: #176b35; /* Makes the message text dark green */
+    background-color: #e0f7f7; /* Gives the message a light turquoise background */
+    color: #176b70; /* Makes the message dark turquoise */
     padding: 18px; /* Adds space inside the message */
     border-radius: 10px; /* Rounds the message corners */
     margin-top: 25px; /* Adds space above the message */
@@ -171,7 +172,7 @@ header h2 {
     }
 
     .rsvp-section {
-        padding: 20px; /* Reduces RSVP section spacing */
+        padding: 20px; /* Reduces RSVP section spacing on mobile */
     }
 
     .rsvp-section h2 {
