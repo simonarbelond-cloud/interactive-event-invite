@@ -1,0 +1,76 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GIF Gala - You're Invited!</title>
+
+    <!-- Connects the CSS file -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Connects the JavaScript file -->
+    <script src="actions.js" defer></script>
+</head>
+<body>
+
+    <main class="invitation-container">
+
+        <!-- Invitation header -->
+        <header>
+            <h1>You're Invited to the GIF Gala: Where Memes Come to Life!</h1>
+            <h2>7/21/23</h2>
+        </header>
+
+        <!-- Event description -->
+        <section class="event-description">
+            <p>
+                Get ready for an unforgettable night of laughter,
+                creativity, and internet culture! Join us at the GIF Gala,
+                where guests dress up as their favorite GIFs or memes.
+                Show off your creativity, enjoy the celebration,
+                and bring your favorite internet moments to life!
+            </p>
+        </section>
+
+        <!-- RSVP form -->
+        <section class="rsvp-section">
+            <h2>RSVP Now!</h2>
+
+            <form id="rsvp-form">
+
+                <!-- Email field -->
+                <label for="email">Email Address:</label>
+                <input
+                    type="email"
+                    id="email"
+                    name="email"
+                    placeholder="Enter your email"
+                    required
+                >
+
+                <!-- Attendance field -->
+                <label for="attendance">Will you attend?</label>
+                <select
+                    id="attendance"
+                    name="attendance"
+                    required
+                >
+                    <option value="">Select your response</option>
+                    <option value="yes">Yes, I'll be there!</option>
+                    <option value="no">Sorry, I can't make it.</option>
+                </select>
+
+                <!-- Submit button -->
+                <button type="submit">Submit RSVP</button>
+
+            </form>
+        </section>
+
+        <!-- Confirmation message area -->
+        <div id="confirmation-message" aria-live="polite"></div>
+
+    </main>
+
+</body>
+</html>
